@@ -1,12 +1,12 @@
-# WebSocket
+# 🎯 WebSocket
 
 <img src="https://github.com/rasitesdmr/springboot-websocket/blob/master/image/ws1.png">
 
 * HTTP ve WebSocket, client-server (istemci-sunucu) iletişiminde kullanılan iletişim protokolleridir.
 
-## HTTP PROTOCOL ?
+## 📌 HTTP PROTOCOL ?
 
-<img src="">
+<img src="https://github.com/rasitesdmr/springboot-websocket/blob/master/image/http1.png">
 
 * İstemcinin (client) isteği (request) ve sunucunun (server) yanıtı (response) gönderdiği yerde HTTP tek yönlüdür.
 * Bir örnek verelim, bir kullanıcı (client) sunucuya (server) bir istek (request) gönderdiğinde, bu istek
@@ -21,7 +21,7 @@
   bağlantısı sonlandırılır, her HTTP isteği sunucuya ayrı bir TCP bağlantısı açar, örn. istemci sunucuya 10 istek
   gönderirse 10 ayrı TCP bağlantısı açılacaktır. ve yanıt/geri dönüş aldıktan sonra kapanır.
 
-## TCP (Transmission Control Protocol) (Geçiş kontrol protokolü) ?
+## 📌 TCP (Transmission Control Protocol) (Geçiş kontrol protokolü) ?
 
 * TCP (Transmission Control Protocol) bilgisayarlar arasındaki iletişimin, küçük paketler hâlinde ve kayıpsız olarak
   gerçekleştirilmesini sağlayan bir protokoldür.
@@ -31,7 +31,7 @@
   HTTP, HTTPS, POP3, SSH, SMTP, TELNET ve FTP gibi günlük hayatta sıkça kullandığımız protokollerin veri iletimi TCP
   vasıtasıyla yapılır
 
-## TCP Nasıl Çalışır ?
+## 📌 TCP Nasıl Çalışır ?
 
 * TCP protokolünün çalışma mantığı üç başlıkta incelenebilir.
 * Birinci aşamada hedefe bir bağlantı isteği gönderilir.
@@ -39,9 +39,9 @@
 * Üçüncü aşamada ise veri transferinin tamamlandığı taraflara iletilerek bağlantı sonlandırılır.
 * Bu üç aşamanın gerçekleşmesi ‘’State’’ işlemi olarak tanımlanır.
 
-## WEBSOCKET PROTOCOL ?
+## 📌 WEBSOCKET PROTOCOL ?
 
-<img src="">
+<img src="https://github.com/rasitesdmr/springboot-websocket/blob/master/image/ws2.png">
 
 * WebSocket iki yönlüdür.
 * HTTP'nin aksine ws:// veya wss:// ile başlar, aynı istemci-sunucu (client-server) iletişim senaryosunda kullanılan tam
@@ -64,11 +64,11 @@
 * Soketin çalışma şekli, HTTP'nin çalışma şeklinden biraz farklıdır, durum kodu 101, WebSocket'teki anahtarlama
   protokolünü belirtir.
 
-## When not to use WebSocket ?
+## 📌 When not to use WebSocket ?
 
 * Ağ üzerinden iletilen gerçek zamanlı güncellenmiş veya sürekli veri akışlarını istiyorsak WebSocket kullanılabilir.
 * Eski verileri getirmek istiyorsak veya bir uygulama ile işlemek için verileri yalnızca bir kez almak istiyorsak
   HTTP protokolü ile gitmeliyiz, çok sık gerekmeyen veya yalnızca bir kez alınan eski veriler basit HTTP isteği ile
   sorgulanabilir, bu yüzden bu senaryoda WebSocket kullanmamak daha iyidir.
 
-<img src="">
+<img src="https://github.com/rasitesdmr/springboot-websocket/blob/master/image/ws4.png">
